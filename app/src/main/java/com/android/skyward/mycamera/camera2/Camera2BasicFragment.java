@@ -144,7 +144,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
     private static final int MAX_PREVIEW_WIDTH = 1920;
     private static final int MAX_PREVIEW_HEIGHT = 1080;
 
-    private DrawViewFrame mDrawIV = null;
+    private DrawRectView mDrawIV = null;
 
 
     /**
@@ -485,7 +485,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
         ImageView camera2_close = (ImageView) view.findViewById(R.id.camera2_close);
         cropImageView.setGuidelines(2);
         cropper_layout.setVisibility(View.GONE);
-        mDrawIV = (DrawViewFrame) view.findViewById(R.id.drawIV);
+        mDrawIV = (DrawRectView) view.findViewById(R.id.drawIV);
         mDrawIV.draw(new Canvas());
         startCropper_c.setOnClickListener(this);
         closeCropper_c.setOnClickListener(this);

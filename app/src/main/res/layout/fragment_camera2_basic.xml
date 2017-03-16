@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
-        <com.android.skyward.mycamera.camera2.DrawViewFrame
+        <com.android.skyward.mycamera.camera2.DrawRectView
             android:id="@+id/drawIV"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
