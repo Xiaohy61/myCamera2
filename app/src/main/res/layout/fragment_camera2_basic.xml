@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.android.skyward.mycamera.camera2.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <com.android.skyward.mycamera.camera2.DrawViewFrame
+            android:id="@+id/drawIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+      >
+        <Button
+            android:id="@+id/picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_camera2_selector" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close_selector"
+            android:id="@+id/camera2_close"
+            android:contentDescription="@string/image"/>
+    </RelativeLayout>
+    </FrameLayout>
+<LinearLayout
+    android:id="@+id/cropper_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+    <com.android.skyward.mycamera.cropper.CropImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/cropImageView">
+
+    </com.android.skyward.mycamera.cropper.CropImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ic2_ok_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_close_selector"
+            android:id="@+id/closeCropper_c"
+            android:contentDescription="@string/image"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/startCropper_c"
+            android:padding="12dp"
+            android:src="@drawable/ic_ok_selector"
+            android:contentDescription="@string/image"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ic2_ok_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_close_selector"
+            android:id="@+id/closeCropper_z"
+            android:contentDescription="@string/image"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/startCropper_z"
+            android:padding="12dp"
+            android:src="@drawable/ic_ok_selector_z"
+            android:contentDescription="@string/image"/>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

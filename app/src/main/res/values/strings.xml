@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">myCamera2</string>
+    <string name="image">""</string>
+    <string name="Please_wait">请稍后</string>
+    <string name="pic_submitting">图片正在上传······</string>
+
+
+</resources>
