@@ -112,4 +112,4 @@ private Bitmap cutImage(byte[] data) {
         }
     }
 ```
-camera2的java代码比较多，就不贴出来了，里面有比较详细的解析，放在git上面了，有兴趣的clone下来look a look，https://github.com/Xiaohy61/myCamera2。
+camera2的java代码比较多，就不贴出来了，源码里面有比较详细的解析
